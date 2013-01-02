@@ -1,0 +1,27 @@
+.date {
+    font-family: Verdana, sans-serif;
+    font-style: italic;
+    margin-top: 15px; 
+}
+
+.tweet {
+    padding: 0px 0px 2px 0px;
+}
+
+
+.picture {
+    width: 50px;
+    float: left;
+    padding: 0px 10px 0px 0px;
+
+}
+
+a:link {
+    text-decoration: none;
+    border: none;
+    color: #007e7e;
+}
+
+a:visited {
+    color:#333366;
+}
