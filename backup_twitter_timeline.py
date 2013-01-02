@@ -33,9 +33,9 @@ __version__ = 1.0
 import argparse
 import  sqlite3
 from dateutil.parser import parse
-
-import twitter # not standard Python module
-
+# python-twitter module available at https://github.com/bear/python-twitter
+import twitter
+ 
 #==============================================================================
 # options
 #==============================================================================
