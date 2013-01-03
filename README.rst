@@ -7,10 +7,10 @@ Requirements
 
 ``backup_twitter_timeline.py`` and ``timeline_to_html.py`` require Python 2.7. Due to the use of the module ``argparse``, older Python versions are not supported.
 
-``backup_twitter_timeline.py`` is based on the very handy external library `python-twitter <https://github.com/bear/python-twitter>`_
+``backup_twitter_timeline.py`` uses the very handy external library `python-twitter <https://github.com/bear/python-twitter>`_
 
-Usage
------
+Usages
+------
 
 ::
 
