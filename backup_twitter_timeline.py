@@ -33,7 +33,9 @@ __version__ = 1.0
 import argparse
 import  sqlite3
 from dateutil.parser import parse
+
 # python-twitter module available at https://github.com/bear/python-twitter
+# and https://code.google.com/p/python-twitter/
 import twitter
  
 #==============================================================================
@@ -98,7 +100,15 @@ with sqlite3.connect(DATABASE) as db_con:
     print "%d tweets saved so far" % len(tweets_saved)
     
     # connect to Twitter
+    # the method GetUserTimeline() is used to retrieve user timeline
+    # so far, no authentification is needed
     api = twitter.Api()
+    # in case authentification is required
+    #api = twitter.Api(
+    #    consumer_key='consumer_key',
+    #    consumer_secret='consumer_secret', 
+    #    access_token_key='access_token', 
+    #    access_token_secret='access_token_secret')
 
     # if no tweet saved so far
     # get id of the most recent tweet
