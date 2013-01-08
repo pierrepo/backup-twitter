@@ -5,9 +5,9 @@ For easy browsing, ``timeline_to_html.py`` converts the database in a single htm
 Requirements
 ------------
 
-``backup_twitter_timeline.py`` and ``timeline_to_html.py`` require Python 2.7. Due to the use of the module ``argparse``, older Python versions are not supported.
+``backup_twitter_timeline.py`` and ``timeline_to_html.py`` require Python 2.7. Due to the use of the module ``argparse``, older Python versions are not supported. These scripts also use the ``dateutil`` Python external library.
 
-``backup_twitter_timeline.py`` uses the very handy external library `python-twitter <https://github.com/bear/python-twitter>`_
+Tweets are retrieved with the very handy external library `python-twitter <https://github.com/bear/python-twitter>`_
 
 Usages
 ------
