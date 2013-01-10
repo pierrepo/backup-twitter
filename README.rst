@@ -49,7 +49,7 @@ For high speed internet connection, use the ``--count`` option set to 100. `Twit
       --picture   download profile picture of users
       --version   show program's version number and exit
 
-Html file is named ``index.html``. Profile pictures and stylesheet are in the ``data`` directory.
+Html file is named ``index.html``. Profile pictures and stylesheet are in the ``twt-data`` directory.
 
 License
 -------
