@@ -65,13 +65,15 @@ args = parser.parse_args()
 DATABASE = args.database
 PICTURE = args.picture
 
+
 #==============================================================================
 # data
 #==============================================================================
+project_dir = os.path.abspath(__file__).rpartition(os.sep)[0]
+user_img_default = project_dir + os.sep + 'Monster_Iconshock.png'
+style_name = project_dir + os.sep + 'style.css'
 out_name = 'index.html'
-user_img_default = './Monster_Iconshock.png'
-style_name = 'style.css'
-data_dir = './data'
+data_dir = 'twt-data'
 #==============================================================================
 # functions
 #==============================================================================
@@ -173,10 +175,10 @@ with sqlite3.connect(DATABASE) as db_con:
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
 <title>~ Twitter timeline ~</title>
-<link type="text/css" rel="stylesheet" href="%s" />
+<link type="text/css" rel="stylesheet" href="%s/style.css" />
 </head>
 <body>
-""" % (data_dir + os.sep + style_name))
+""" % data_dir )
 
     current_day = ""
 
